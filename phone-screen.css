@@ -1,0 +1,14 @@
+@media only screen and (max-width: 300px){
+    body {
+        background-color: lightcoral;
+    }
+    #navbar h2{
+        font-size: 20px;
+    }
+    #navbar li {
+        padding: 8px;
+    }
+    #navbar li a {
+        font-size: 15px;
+    }
+}
