@@ -1,90 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="phone-screen.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Skilled e-learning Landing page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="phone-screen.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <title>Perplexity AI Clone</title>
 </head>
-
 <body>
-    <nav id="navbar">
-        <h2>Skilled</h2>
-        <li><a href="#">Get Started</a></li>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="logo">
+        <span class="logo-mark">P</span>
+        <span class="logo-text">Perplexity</span>
+      </div>
+      <div class="nav-links">
+        <a href="#">Discover</a>
+        <a href="#">Research</a>
+        <a href="#">Pro</a>
+        <a href="#">Enterprise</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn ghost">Log in</button>
+        <button class="btn primary">Try Pro</button>
+      </div>
     </nav>
-    <section class="home-text">
-        <div class="left-side">
-            <h1>Maximize skill, <br>
-                minimize budget</h1>
-            <p>Our Modern courses across a range of in-demand <br>
-                skills will give you the knowledge you need to live <br>
-                the life you want</p>
-            <button class="btn">Get Started</button>
-        </div>
-        <div class="right-side">
-            <img src="./study.png" alt="study girl images">
-            <span class="first-box">Members 30K</span>
-            <span class="second-box">Course hours <br>1,451</span>
-        </div>
-    </section>
-    <section id="coures-list">
-        <div class="course-first">
-            <h2>Check out our <br> most popular <br> courses!</h2>
-        </div>
-        <div class="box course-second">
-            <span class="icon"><i class="fa-solid fa-person-running"></i></span>
-            <div class="text-content">
-                <h4>Animaion</h4>
-                <p>Learn the latest animation techniques to create stunning motion desgin and captivate your audience
-                </p>
-                <a href="#">Get Started</a>
-            </div>
-        </div>
-        <div class="box course-third">
-            <span class="icon"><i class="fa-solid fa-palette"></i></span>
-            <div class="text-content">
-                <h4>Desgin</h4>
-                <p>Create beautiful usable interfaces to nhelp shape the future of how the web books.</p>
-                <a href="#">Get Started</a>
-            </div>
-        </div>
-        <div class="box course-four">
-            <span class="icon"><i class="fa-solid fa-camera"></i></span>
-            <div class="text-content">
-                <h4>Photography</h4>
-                <p>Explore critical fundamental like lighting composition and focus to capture exceptional photos.</p>
-                <a href="#">Get Started</a>
-            </div>
-        </div>
-        <div class="box course-five">
-            <span class="icon"><i class="fa-solid fa-coins"></i></span>
-            <div class="text-content">
-                <h4>Crypto</h4>
-                <p>All you need to know to get Started investing in Crypto. Go from beginner to advanced with this 54
-                    hours
-                    course</p>
-                <a href="#">Get Started</a>
-            </div>
-        </div>
-        <div class="box course-six">
-            <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
-            <div class="text-content">
-                <h4>Business</h4>
-                <p>A step-by-step playbook to help you start scale and sustain your business without outside invesment
-                </p>
-                <a href="#">Get Started</a>
-            </div>
-        </div>
-    </section>
-    <footer id="footer">
-        <h2>Skilled</h2>
-        <li><a href="#">Get Started</a></li>
-    </footer>
-</body>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="pill">AI Search Assistant</span>
+        <h1>
+          Ask anything. Get
+          <span class="accent">accurate answers</span>
+          with trusted sources.
+        </h1>
+        <p>
+          A Perplexity-inspired experience that blends conversational search with
+          curated citations, so you can move from question to knowledge in seconds.
+        </p>
+        <div class="search-card">
+          <input
+            type="text"
+            placeholder="Ask a question or search topics"
+            aria-label="Search"
+          />
+          <button class="btn primary">Search</button>
+        </div>
+        <div class="quick-actions">
+          <button class="chip">Summarize news</button>
+          <button class="chip">Compare tools</button>
+          <button class="chip">Generate outline</button>
+          <button class="chip">Explain concepts</button>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-header">
+          <span>Answer</span>
+          <span class="badge">Live</span>
+        </div>
+        <h3>How does retrieval-augmented generation work?</h3>
+        <p>
+          It pairs a search step with a language model, fetching relevant passages
+          before generating a response. The citations shown here reflect those
+          sources, helping you verify the answer.
+        </p>
+        <div class="sources">
+          <div class="source">
+            <span class="dot"></span>
+            <div>
+              <h4>Stanford CS324</h4>
+              <p>Lecture notes on RAG pipelines.</p>
+            </div>
+          </div>
+          <div class="source">
+            <span class="dot"></span>
+            <div>
+              <h4>OpenAI Cookbook</h4>
+              <p>Retrieval best practices and examples.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-grid">
+      <div class="feature-card">
+        <h3>Trusted citations</h3>
+        <p>Every answer includes the sources used to build it.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Real-time research</h3>
+        <p>Search the web and summarize complex topics instantly.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Multimodal queries</h3>
+        <p>Ask about text, images, or data and get rich responses.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Team workspaces</h3>
+        <p>Share collections, follow threads, and stay aligned.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div>
+        <h2>Ready to search smarter?</h2>
+        <p>Start exploring with a lightweight Perplexity AI clone experience.</p>
+      </div>
+      <button class="btn primary">Create account</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <span class="logo-text">Perplexity</span>
+      <p>AI search interface concept for learning and demos.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Support</a>
+    </div>
+  </footer>
+</body>
 </html>
